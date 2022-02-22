@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+h1 {
+    font-size: 17pt;
+}
+
+.location-info {
+    white-space: pre-wrap;
+}

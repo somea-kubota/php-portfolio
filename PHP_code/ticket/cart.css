@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+table {
+  width: 100%;
+}
+
+thead {
+  border-top: 2px solid #666;
+}
+
+tr {
+  border-bottom: 2px solid #666;
+}
+
+td {
+  margin: 3px;
+}
+
+p {
+  margin: 0.75rem 0 0;
+}
+
+.display-none {
+  display: none;
+}
+
+.delete-button {
+  color: #666;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: #666;
+  background: transparent;
+}
+
+.product-image {
+  float: left;
+}
+
+.price::after,
+.subtotal-total::after,
+.total-value::after {
+  content: '円';
+}
+
+th {
+  color: #111;
+  text-align: center;
+  padding: auto;
+}
+
+.delete {
+  bottom: 1.125rem;
+  float: right;
+  right: 0;
+  text-align: right;
+  width: 45%;
+}
+
+.item,
+.product-image {
+  margin: 5px;
+}
+
+.product-details {
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+.quantity-field {
+  background-color: #ccc;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 0.625rem;
+  padding: 2px;
+  width: 3.75rem;
+}
+
+button.change {
+  font-size: 0.625rem;
+  padding: 2px;
+  width: 3.75rem;
+}
+
+.summary {
+  margin-left: auto;
+  background-color: #eee;
+  border: 1px solid #aaa;
+  padding: 1rem;
+  width: 250px;
+}
+
+.summary-total-items {
+  color: #111;
+  text-align: center;
+}
+
+.summary-total {
+  border-top: 1px solid #ccc;
+  clear: both;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+}
+
+.total-title,
+.total-value {
+  color: #111;
+  float: left;
+  width: 50%;
+}
+
+.total-value {
+  text-align: right;
+}
+
+.total-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.summary-checkout {
+  display: block;
+}
+
+.checkout-cta {
+  display: block;
+  float: none;
+  font-size: 0.75rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.625rem 0;
+  width: 100%;
+  background-color: red;
+}
+
+.danger {
+  margin-left: auto;
+  border-bottom: 1px solid red;
+}
+
+label:after {
+  content: ':　';
+}
+
+@media screen and (max-width: 480px) {
+  .item {
+    display: inline-block;
+  }
+
+  .product-image {
+    margin-left: 0%;
+    margin-top: 0%;
+    display: inline-block;
+  }
+
+  .product-details {
+    margin-left: 0%;
+    margin-bottom: 0%;
+    display: inline-block;
+  }
+
+  .quantity-field {
+    display: inline-block;
+  }
+
+  button.change {
+    display: inline-block;
+    margin-top: 1%;
+  }
+
+}
+
+@media screen and (min-width: 781px) {
+  .item {
+    display: flex;
+  }
+
+  .product-image {
+    margin-left: 0%;
+    margin-top: 0%;
+    display: inline-block;
+  }
+
+  .product-details {
+    display: inline-block;
+  }
+
+  .quantity {
+    display: flex;
+  }
+
+  .quantity-field {
+    display: inline-block;
+  }
+
+  button.change {
+    margin-left: 1%;
+    display: inline-block;
+  }
+
+}
