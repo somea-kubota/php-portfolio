@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.location-info {
+    white-space: pre-wrap;
+}
+
+.drama-info {
+    text-align: center;
+}
